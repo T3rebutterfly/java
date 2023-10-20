@@ -5,7 +5,7 @@
 package Biydaalt;
 
 import java.util.*;
-
+//1 ээс n хүртэлх тоонуудын тэгш тоонуудын үржвэрийг ол
 public class daalgavar1 {
     public static void main(String[] args)
     {
@@ -13,15 +13,16 @@ public class daalgavar1 {
         System.out.print("N toog oruul: ");
         int n = d.nextInt();
         
-        float s = 1;
-        
+        int s = 1;
+        System.out.print("Tanii hariu: ");
         for(int i = 1; i <= n; i++)
         {
             if(i%2==0)
             {
                 s *= i;
-                System.out.println(s);
+                
             }
         }
+        System.out.println(s);
     }
 }

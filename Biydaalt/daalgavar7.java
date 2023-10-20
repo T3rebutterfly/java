@@ -5,9 +5,8 @@
 package Biydaalt;
 
 import java.util.*;
-import java.lang.Math;
-//Гараас өгсөн n зэргээр a-тай харгалзах тухайн тооны зэргийг олох бодлого. 
-public class daalgavar4 {
+//[ a, b] завсарт орших бүх тэгш тоонуудын нийлбэрийг ол.
+public class daalgavar7 {
     public static void main(String[] args)
     {
         Scanner d = new Scanner(System.in);
@@ -15,10 +14,19 @@ public class daalgavar4 {
         int a = d.nextInt();
         
         Scanner e = new Scanner(System.in);
-        System.out.print("N toog oruul: ");
-        int n = e.nextInt();
+        System.out.print("B toog oruul: ");
+        int b = e.nextInt();
         
-        int square = (int) Math.pow(a,n);
-        System.out.println("Hariu: " + square);
+        int s = 0;
+        System.out.print("Tanii hariu: ");
+        while(a <= b)
+        {
+            if(a%2==0)
+            {
+                s += a;
+            }
+            a++;
+        }
+        System.out.println(s);
     }
 }

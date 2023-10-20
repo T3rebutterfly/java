@@ -5,23 +5,23 @@
 package Biydaalt;
 
 import java.util.*;
-//n хүртэлх тоо, гараас утга авсан m тоонд хуваагдах бодлого.
-public class daalgavar5 {
+//1!+2!+3!...............n! –ийн нийлбэрийг олох бодлого. 
+public class daalgavar9 {
     public static void main(String[] args)
     {
         Scanner d = new Scanner(System.in);
         System.out.print("N toog oruul: ");
         int n = d.nextInt();
-        System.out.print("M toog oruul: ");
-        int m = d.nextInt();
-        
-        System.out.print("tanii hariu: ");
-        for(int i = 1; i < n; i++)
+       
+        int fact = 1;
+        int sum = 0;
+        System.out.print("factorial iin niilberiin hariu: ");
+        for(int i = 1; i <= n; i++)
         {
-            if(i%m==0)
-            {
-                System.out.print(i + ",");
-            }
+            fact = fact * i;
+            sum += fact;
+            
         }
+        System.out.println(sum);
     }
 }

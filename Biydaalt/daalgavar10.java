@@ -5,23 +5,25 @@
 package Biydaalt;
 
 import java.util.*;
-//n хүртэлх тоо, гараас утга авсан m тоонд хуваагдах бодлого.
-public class daalgavar5 {
+//1-ээс n хүртэлх сондгой тоонуудын нийлбэр,нийлбэрийн дунджийг ол.
+public class daalgavar10 {
     public static void main(String[] args)
     {
         Scanner d = new Scanner(System.in);
         System.out.print("N toog oruul: ");
         int n = d.nextInt();
-        System.out.print("M toog oruul: ");
-        int m = d.nextInt();
-        
-        System.out.print("tanii hariu: ");
-        for(int i = 1; i < n; i++)
+        int j = 0;
+        int s = 0;
+        for(int i = 0; i <= n; i++)
         {
-            if(i%m==0)
+            if(i%2!=0)
             {
-                System.out.print(i + ",");
+                s += i;
+                j++;
             }
         }
+        System.out.println("Sondgoi toonuudiin niilber: " + s);
+        float average = s / j;
+        System.out.println("Niilberiin dundaj bol: " + average);
     }
 }

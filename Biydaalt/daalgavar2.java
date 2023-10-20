@@ -5,7 +5,7 @@
 package Biydaalt;
 
 import java.util.*;
-
+//Гараас n тоо оруулаад тэгш тоонуудын нийлбэр, сондой тоонуудын үржвэрийг ол.
 public class daalgavar2 {
      public static void main(String[] args)
     {
@@ -20,13 +20,13 @@ public class daalgavar2 {
             if(i%2==0)
             {
                 s += i;
-                System.out.println("tegsh toonii niilber: " + s);
             }
             if(i%2!=0)
             {
                 z *= i;
-                System.out.println("sondgoi toonii urjver: " + z);
             }
         }
+        System.out.println("tegsh toonii niilber: " + s);
+        System.out.println("sondgoi toonii urjver: " + z);
     }
 }

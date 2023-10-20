@@ -5,7 +5,7 @@
 package Biydaalt;
 
 import java.util.*;
-
+//Гараас өгөгдсөн n хүртэлх тоонуудын дунджийг олох бодлого
 public class daalgavar3 {
     public static void main(String[] args)
     {
@@ -19,7 +19,7 @@ public class daalgavar3 {
         {
             s += i;
         }
-        float average = s / n;
+        int average = s / n;
         System.out.println("Dundaj bol: " + average);
     }
 }
